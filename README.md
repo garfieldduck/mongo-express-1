@@ -76,7 +76,7 @@ Fill in your MongoDB connection details, and any other options you want to chang
 
 **To use:**
 
-Visit `http://localhost:8081` or whatever URL/port you entered into your config.
+Visit `http://localhost:7000` or whatever URL/port you entered into your config.
 
 
 BSON Data Types
