@@ -1,6 +1,6 @@
 module.exports = {
   mongodb: {
-    server: 'localhost',
+    server: '172.17.0.2',
     port: 27017,
 
     //autoReconnect: automatically reconnect if connection is lost
@@ -43,7 +43,7 @@ module.exports = {
     //baseUrl: the URL that mongo express will be located at
     //Remember to add the forward slash at the end!
     baseUrl: '/',
-    port: 8081,
+    port: 7000,
     cookieSecret: 'cookiesecret',
     sessionSecret: 'sessionsecret',
     cookieKeyName: 'mongo-express'
