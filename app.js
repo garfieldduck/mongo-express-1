@@ -39,6 +39,13 @@ app.configure(function(){
     secret: config.site.sessionSecret,
     key: config.site.cookieKeyName
   }));
+  
+  // Authenticator
+  app.use(express.basicAuth(function(user, pass, callback) {
+   var result = (user === 'testUser' && pass === 'testPass');
+   callback(null /* error */, result);
+  }));
+  
   app.use(express.methodOverride());
   app.use(app.router);
 });
